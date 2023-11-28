@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "neodgm";
+  src: url("font/neodgm.woff") format("woff");
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/map.png");
+  font-family: "neodgm", sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.container-new.hide {
+  display: none;
+}
