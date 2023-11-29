@@ -5,9 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/canvas.css" />
+    <link rel="stylesheet" href="css/menu.css" />
     <title>캐릭터 이동 구현</title>
   </head>
   <body>
+    <div class="container-todo">
+      <div class="title-todo">
+        <span>TODO LIST</span>
+        <img src="img/down-arrow.png" />
+      </div>
+      <div class="todo-list">
+        <div class="todo-list-section">
+          <div>
+            <span>모임 </span>
+          </div>
+          <div>
+            <span>개인 </span>
+          </div>
+        </div>
+        <div class="todo-list-common">
+          <form class="form-todo">
+            <div class="todo-check">
+              <img src="img/check-none.png" />
+            </div>
+            <input type="text" />
+          </form>
+        </div>
+        <div class="todo-list-personal hide">d</div>
+      </div>
+    </div>
+
+    <div class="container-chat">
+      <div>
+        <img src="img/chat.png" />
+      </div>
+      <div>
+        <img src="img/voice-chat.png" />
+      </div>
+    </div>
     <script src="js/move.js"></script>
   </body>
 </html>
