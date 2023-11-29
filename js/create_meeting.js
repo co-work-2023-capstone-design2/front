@@ -68,3 +68,9 @@ $(".btn-link").on("click", () => {
   $(".container").addClass("hide");
   $(".container-link").removeClass("hide");
 });
+
+// 초대 코드 폼 내 입장하기 버튼 클릭
+$(".btn-invite-next").on("click", () => {
+  $(".container-link").addClass("hide");
+  $(".container-make-character").removeClass("hide");
+});

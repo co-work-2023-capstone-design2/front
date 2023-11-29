@@ -28,3 +28,7 @@ body {
 .container-link.hide {
   display: none;
 }
+
+.container-make-character.hide {
+  display: none;
+}
