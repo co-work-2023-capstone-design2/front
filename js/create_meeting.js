@@ -1,4 +1,5 @@
-let random;
+let buildingRandom = 0;
+let characterRandom = 0;
 const buildings = [
   "img/buildings/building_1.png",
   "img/buildings/building_2.png",
@@ -25,8 +26,8 @@ $(".btn-new").on("click", () => {
 
 // 새로 만들기 -다시 뽑기 버튼
 $(".btn-retry").on("click", () => {
-  random = Math.floor(Math.random() * buildings.length);
-  $("#img-building-setting").attr("src", buildings[random]);
+  buildingRandom = Math.floor(Math.random() * buildings.length);
+  $("#img-building-setting").attr("src", buildings[buildingRandom]);
 });
 
 // 새로 만들기 -건물 층수 설정
@@ -55,7 +56,7 @@ $("#btn-plus").on("click", () => {
 $(".btn-new-next").on("click", () => {
   $(".container-new").addClass("hide");
   $(".img-container").removeClass("hide");
-  $(".img-new-building").attr("src", buildings[random]);
+  $(".img-new-building").attr("src", buildings[buildingRandom]);
 });
 
 // drag-and-drop event
@@ -112,15 +113,21 @@ $(".btn-invite-next").on("click", () => {
   $(".container-make-character").removeClass("hide");
 });
 
-// 초대 코드 폼 내 캐릭터 다시 뽑기 버튼
+// 캐릭터 생성 다시 뽑기 버튼
 let counter = 3;
 $("#retry-character").on("click", () => {
   if (counter > 0) {
     counter--;
     $("#retry-character").html(`&#128472; 다시 뽑기 (${counter}회)`);
     // change character img
-    random = Math.floor(Math.random() * characters.length);
-    $("#img-character-setting").attr("src", characters[random]);
+    characterRandom = Math.floor(Math.random() * characters.length);
+    $("#img-character-setting").attr("src", characters[characterRandom]);
     // todo: save character number
   }
+});
+
+// 캐릭터 생성 입장하기 버튼
+$("#character-setting").on("click", () => {
+  window.localStorage.setItem("character", characterRandom);
+  location.href = "move.html";
 });

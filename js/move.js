@@ -1,3 +1,14 @@
+const characters = [
+  "img/character/bear.png",
+  "img/character/cat.png",
+  "img/character/crocodile.png",
+  "img/character/dog.png",
+  "img/character/mouse.png",
+  "img/character/penguin.png",
+  "img/character/rabbit.png",
+  "img/character/squirrel.png",
+];
+
 // make image
 let canvas;
 let ctx;
@@ -28,7 +39,8 @@ function loadImage() {
   backgroundImage.src = "img/buildings/inner4x.png";
 
   character = new Image();
-  character.src = "img/character/bear.png";
+  const characterN = window.localStorage.getItem("character");
+  character.src = characters[characterN];
 }
 
 // keyboard event
