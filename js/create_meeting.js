@@ -29,6 +29,28 @@ $(".btn-retry").on("click", () => {
   $("#img-building-setting").attr("src", buildings[random]);
 });
 
+// 새로 만들기 -건물 층수 설정
+let floors = 1;
+$("#btn-minus").on("click", () => {
+  floors--;
+  if (floors > 0) {
+    $("#floors").html(floors);
+  }
+  if (floors < 1) {
+    alert("층수는 1층부터 가능합니다.");
+  }
+});
+
+$("#btn-plus").on("click", () => {
+  floors++;
+  if (floors < 4) {
+    $("#floors").html(floors);
+  }
+  if (floors > 3) {
+    alert("층수는 3층까지 가능합니다.");
+  }
+});
+
 // 새로 만들기 -다음 버튼
 $(".btn-new-next").on("click", () => {
   $(".container-new").addClass("hide");
@@ -96,8 +118,9 @@ $("#retry-character").on("click", () => {
   if (counter > 0) {
     counter--;
     $("#retry-character").html(`&#128472; 다시 뽑기 (${counter}회)`);
-    // todo: change character img
+    // change character img
     random = Math.floor(Math.random() * characters.length);
     $("#img-character-setting").attr("src", characters[random]);
+    // todo: save character number
   }
 });
