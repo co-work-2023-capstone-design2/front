@@ -102,6 +102,8 @@ function render() {
     characterSize,
     characterSize
   );
+  // 사용자 닉네임에 맞게 수정해야함
+  ctx.fillText("닉네임 출력", characterX, characterY);
 }
 
 function main() {
