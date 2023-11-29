@@ -25,7 +25,7 @@
       <button class="btn-square btn-link">초대 코드로 들어가기</button>
     </div>
 
-    <!--건물 생성 컨테이너-->
+    <!--새로 만들기: 건물 생성 컨테이너-->
     <div class="container-new hide main">
       <div class="meeting-title span-2 center">
         <span class="semi-title">모임 이름</span>
@@ -76,6 +76,37 @@
         draggable="true"
       />
     </div>
+
+    <!--초대 코드: 초대 코드 입력-->
+    <div class="container-link hide main">
+      <div class="meeting-title span-2 center">
+        <span class="semi-title">초대 코드</span>
+        <input class="input-meeing-name" type="text" />
+      </div>
+      <div class="meeting-img center">
+        <div class="img-box">
+          <div class="img">
+            <img id="img-building-setting" src="img/buildings/building_5.png" />
+          </div>
+        </div>
+      </div>
+      <div class="meeting-info center">
+        <div>
+          <div>
+            <span class="semi-title">건물 주인</span>
+            <input type="text" placeholder="로그인한 사용자로 수정" readonly />
+          </div>
+          <div class="center">
+            <span class="semi-title">모임 설명</span>
+            <textarea></textarea>
+          </div>
+          <div class="right">
+            <button class="btn-invite-next btn-next">입장하기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="js/create_meeting.js"></script>
   </body>
 </html>

@@ -24,3 +24,7 @@ body {
 .container-new.hide {
   display: none;
 }
+
+.container-link.hide {
+  display: none;
+}

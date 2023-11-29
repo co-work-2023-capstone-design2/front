@@ -62,3 +62,9 @@ document.querySelector("body").addEventListener("drop", (event) => {
   // todo
   // send to server building's position
 });
+
+// 초대 코드로 들어가기 클릭
+$(".btn-link").on("click", () => {
+  $(".container").addClass("hide");
+  $(".container-link").removeClass("hide");
+});
