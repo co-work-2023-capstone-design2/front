@@ -28,13 +28,7 @@ function loadImage() {
   backgroundImage.src = "img/buildings/inner4x.png";
 
   character = new Image();
-  character.src = "img/character/bear_left.png";
-
-  character_right = new Image();
-  character_right.src = "img/character/bear_right.png";
-
-  character_back = new Image();
-  character_back.src = "img/character/bear_back.png";
+  character.src = "img/character/bear.png";
 }
 
 // keyboard event
