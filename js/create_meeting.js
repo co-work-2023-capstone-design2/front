@@ -74,3 +74,13 @@ $(".btn-invite-next").on("click", () => {
   $(".container-link").addClass("hide");
   $(".container-make-character").removeClass("hide");
 });
+
+// 초대 코드 폼 내 캐릭터 다시 뽑기 버튼
+let counter = 3;
+$("#retry-character").on("click", () => {
+  if (counter > 0) {
+    counter--;
+    $("#retry-character").html(`&#128472; 다시 뽑기 (${counter}회)`);
+    // todo: change character img
+  }
+});
