@@ -59,6 +59,10 @@ document.querySelector("body").addEventListener("drop", (event) => {
     .appendChild(clonedBuildingElement);
   newBuilbing.id = "1"; // todo: change to random id
   document.querySelector(".img-new-building").classList.add("hide");
+
+  newBuilbing.onclick = function () {
+    $(".container-make-character").removeClass("hide");
+  };
   // todo
   // send to server building's position
 });

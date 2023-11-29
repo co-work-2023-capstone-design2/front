@@ -21,6 +21,7 @@ body {
   display: none;
 }
 
+/* start_setting.html */
 .container-new.hide {
   display: none;
 }
@@ -31,4 +32,8 @@ body {
 
 .container-make-character.hide {
   display: none;
+}
+
+.container-make-character {
+  z-index: 1;
 }
