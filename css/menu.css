@@ -1,0 +1,71 @@
+/* move.html */
+/* 투두 메뉴 */
+.container-todo {
+  position: fixed;
+  top: 50px;
+  right: 100px;
+  background-color: black;
+  color: white;
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  justify-content: center;
+  border-radius: 10%;
+}
+
+.title-todo,
+.todo-list {
+  text-align: center;
+}
+
+.title-todo span {
+  font-size: 30px;
+  margin: 30px;
+}
+
+.todo-list {
+  width: inherit;
+}
+
+.todo-list-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.todo-list-section div {
+  font-size: 20px;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.todo-list-section div:hover {
+  color: #6063dc;
+  border-bottom: 1px solid #6063dc;
+}
+
+.form-todo {
+  display: flex;
+  justify-content: space-around;
+}
+
+input {
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: black;
+  color: white;
+  font-family: "neodgm", sans-serif;
+}
+
+/* 채팅 메뉴 */
+.container-chat {
+  display: flex;
+  position: fixed;
+  bottom: 30px;
+  left: 70px;
+}
