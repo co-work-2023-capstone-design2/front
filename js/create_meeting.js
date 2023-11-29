@@ -1,10 +1,4 @@
-// 새로 만들기
-$(".btn-new").on("click", () => {
-  $(".container").addClass("hide");
-  $(".container-new").removeClass("hide");
-});
-
-// 새로 만들기 -다시 뽑기 버튼
+let random;
 const buildings = [
   "img/buildings/building_1.png",
   "img/buildings/building_2.png",
@@ -12,7 +6,24 @@ const buildings = [
   "img/buildings/building_4.png",
   "img/buildings/building_5.png",
 ];
-let random;
+const characters = [
+  "img/character/bear.png",
+  "img/character/cat.png",
+  "img/character/crocodile.png",
+  "img/character/dog.png",
+  "img/character/mouse.png",
+  "img/character/penguin.png",
+  "img/character/rabbit.png",
+  "img/character/squirrel.png",
+];
+
+// 새로 만들기
+$(".btn-new").on("click", () => {
+  $(".container").addClass("hide");
+  $(".container-new").removeClass("hide");
+});
+
+// 새로 만들기 -다시 뽑기 버튼
 $(".btn-retry").on("click", () => {
   random = Math.floor(Math.random() * buildings.length);
   $("#img-building-setting").attr("src", buildings[random]);
@@ -86,5 +97,7 @@ $("#retry-character").on("click", () => {
     counter--;
     $("#retry-character").html(`&#128472; 다시 뽑기 (${counter}회)`);
     // todo: change character img
+    random = Math.floor(Math.random() * characters.length);
+    $("#img-character-setting").attr("src", characters[random]);
   }
 });
