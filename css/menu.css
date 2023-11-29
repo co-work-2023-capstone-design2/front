@@ -7,12 +7,11 @@
   background-color: black;
   color: white;
   width: 400px;
-  height: 400px;
   padding: 20px;
   display: grid;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: min-content 5fr;
   justify-content: center;
-  border-radius: 10%;
+  border-radius: 50px;
 }
 
 .title-todo,
@@ -32,6 +31,7 @@
 .todo-list-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
 }
 
 .todo-list-section div {
@@ -46,9 +46,11 @@
   border-bottom: 1px solid #6063dc;
 }
 
-.todo-form {
+.todo-form,
+#todo-list div {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 15px;
 }
 
 input {
