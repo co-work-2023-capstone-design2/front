@@ -73,7 +73,7 @@
     </div>
 
     <!--음성 채팅창 사이드바-->
-    <div class="side-chatting" id="voice-chat">
+    <div class="side-chatting hide" id="voice-chat">
       <div class="side-header">
         <span class="semi-title">음성 채팅</span>
         <img class="btn-chat-exit" src="img/exit-btn.png" />
@@ -81,9 +81,11 @@
       <div class="profile">
         <div class="profile-me"></div>
         <span class="semi-title">나</span>
-        <img src="img/voice-on.png" />
-        <div></div>
-        <hr />
+        <img id="voice-state" src="img/voice-on.png" />
+        <div id="voice-option">
+          <img src="img/horizontal-dot.png" />
+        </div>
+        <div id="voice-exit"><img src="img/voice-exit.png" /></div>
       </div>
       <div class="other-profile"></div>
     </div>
@@ -92,6 +94,6 @@
     <script src="js/move.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/text_chat.js"></script>
-    <script src="js/voice.js"></script>
+    <script src="js/voice_chat.js"></script>
   </body>
 </html>
