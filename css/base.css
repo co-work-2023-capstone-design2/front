@@ -33,6 +33,7 @@ body {
 }
 
 /* move.html chatting */
-.side-chatting.hide {
+#text-chat.hide,
+#voice-chat.hide {
   display: none;
 }
