@@ -40,10 +40,25 @@ function handleToDoSubmit(event) {
 
 todoForm.addEventListener("submit", handleToDoSubmit);
 
-// const savedToDos = localStorage.getItem(TODOS_KEY);
+// 투두 섹션 선택
+$(".meeting-check").on("click", () => {
+  $(".meeting-check").addClass("selected");
+  $(".meeting-check").css({
+    "border-bottom": "1px solid #6063dc",
+  });
+  $(".personal-check").removeClass("selected");
+  $(".personal-check").css({
+    "border-bottom": "1px solid white",
+  });
+});
 
-// if (savedToDos !== null) {
-//   const parsedToDos = JSON.parse(savedToDos);
-//   todos = parsedToDos;
-//   parsedToDos.forEach(paintToDo);
-// }
+$(".personal-check").on("click", () => {
+  $(".personal-check").addClass("selected");
+  $(".personal-check").css({
+    "border-bottom": "1px solid #6063dc",
+  });
+  $(".meeting-check").removeClass("selected");
+  $(".meeting-check").css({
+    "border-bottom": "1px solid white",
+  });
+});
