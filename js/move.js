@@ -1,14 +1,3 @@
-const characters = [
-  "img/character/bear.png",
-  "img/character/cat.png",
-  "img/character/crocodile.png",
-  "img/character/dog.png",
-  "img/character/mouse.png",
-  "img/character/penguin.png",
-  "img/character/rabbit.png",
-  "img/character/squirrel.png",
-];
-
 // make image
 let canvas;
 let ctx;
