@@ -92,6 +92,25 @@ function limitPosition() {
   }
 }
 
+// character name setting
+function drawTextBG(ctx, txt, posX, posY) {
+  const padding = 10;
+  const fontSize = 15;
+  const realX = posX - padding;
+  const realY = posY - padding * 1.5;
+  ctx.font = "15px neodgm, sans-serif";
+  ctx.textBaseline = "top";
+
+  var width = ctx.measureText(txt).width;
+  ctx.fillStyle = "#6063DC";
+  ctx.beginPath();
+  ctx.roundRect(realX, realY, width + padding, fontSize + padding, 100);
+  ctx.fill();
+
+  ctx.fillStyle = "#fff";
+  ctx.fillText(txt, realX + padding / 2, realY + padding / 2); // test-align center
+}
+
 // render image into canvas
 function render() {
   ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
@@ -103,7 +122,9 @@ function render() {
     characterSize
   );
   // 사용자 닉네임에 맞게 수정해야함
-  ctx.fillText("닉네임 출력", characterX, characterY);
+  const user_name = "닉네임 출력";
+  // ctx.fillText(user_name, characterX, characterY);
+  drawTextBG(ctx, user_name, characterX, characterY);
 }
 
 function main() {
