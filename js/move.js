@@ -16,8 +16,8 @@ let ctx;
 canvas = document.createElement("canvas");
 ctx = canvas.getContext("2d");
 
-canvas.height = window.innerHeight - 50;
-canvas.width = window.innerWidth - 50;
+canvas.height = window.innerHeight;
+canvas.width = window.innerWidth;
 
 window.addEventListener("resize", () => {
   canvas.height = window.innerHeight - 50;
