@@ -46,6 +46,10 @@
   border-bottom: 1px solid #6063dc;
 }
 
+.selected {
+  color: #6063dc;
+}
+
 .todo-form,
 #todo-list div {
   display: flex;
