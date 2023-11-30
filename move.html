@@ -51,19 +51,19 @@
     </div>
 
     <div class="container-chat">
-      <div>
+      <div id="btn-text-chat">
         <img src="img/chat.png" />
       </div>
-      <div>
+      <div id="btn-voice-chat">
         <img src="img/voice-chat.png" />
       </div>
     </div>
 
     <!--채팅창 사이드바-->
-    <div class="side-chatting">
+    <div class="side-chatting hide" id="text-chat">
       <div class="side-header">
         <span class="semi-title">채팅</span>
-        <img src="img/exit-btn.png" />
+        <img class="btn-chat-exit" src="img/exit-btn.png" />
       </div>
       <div id="chatting-log"></div>
       <form class="chatting-form">
@@ -71,8 +71,27 @@
         <div><img src="img/send-btn.png" /></div>
       </form>
     </div>
+
     <!--음성 채팅창 사이드바-->
+    <div class="side-chatting" id="voice-chat">
+      <div class="side-header">
+        <span class="semi-title">음성 채팅</span>
+        <img class="btn-chat-exit" src="img/exit-btn.png" />
+      </div>
+      <div class="profile">
+        <div class="profile-me"></div>
+        <span class="semi-title">나</span>
+        <img src="img/voice-on.png" />
+        <div></div>
+        <hr />
+      </div>
+      <div class="other-profile"></div>
+    </div>
+
+    <script src="js/img.js"></script>
     <script src="js/move.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/text_chat.js"></script>
+    <script src="js/voice.js"></script>
   </body>
 </html>
