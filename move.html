@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/canvas.css" />
     <link rel="stylesheet" href="css/menu.css" />
@@ -16,10 +21,10 @@
       </div>
       <div class="todo-list">
         <div class="todo-list-section">
-          <div>
+          <div class="meeting-check" id="meeting-todo">
             <span>모임 </span>
           </div>
-          <div>
+          <div class="personal-check" id="personal-todo">
             <span>개인 </span>
           </div>
         </div>
@@ -32,7 +37,15 @@
           </form>
           <div id="todo-list"></div>
         </div>
-        <div class="todo-list-personal hide">d</div>
+        <div class="todo-list-personal hide">
+          <form class="todo-form">
+            <div class="todo-check">
+              <img src="img/check-none.png" />
+            </div>
+            <input type="text" />
+          </form>
+          <div id="todo-list"></div>
+        </div>
       </div>
     </div>
 
