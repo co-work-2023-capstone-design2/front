@@ -22,18 +22,17 @@ body {
 }
 
 /* start_setting.html */
-.container-new.hide {
-  display: none;
-}
-
-.container-link.hide {
-  display: none;
-}
-
+.container-new.hide,
+.container-link.hide,
 .container-make-character.hide {
   display: none;
 }
 
 .container-make-character {
   z-index: 1;
+}
+
+/* move.html chatting */
+.side-chatting.hide {
+  display: none;
 }
