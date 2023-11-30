@@ -93,7 +93,7 @@ function limitPosition() {
 }
 
 // character name setting
-function drawTextBG(ctx, txt, posX, posY) {
+function drawName(ctx, txt, posX, posY) {
   const padding = 10;
   const fontSize = 15;
   const realX = posX - padding;
@@ -123,8 +123,7 @@ function render() {
   );
   // 사용자 닉네임에 맞게 수정해야함
   const user_name = "닉네임 출력";
-  // ctx.fillText(user_name, characterX, characterY);
-  drawTextBG(ctx, user_name, characterX, characterY);
+  drawName(ctx, user_name, characterX, characterY);
 }
 
 function main() {
