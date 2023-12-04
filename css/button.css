@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "neodgm";
+  src: url("font/neodgm.woff") format("woff");
+}
+
 .btn {
   width: 400px;
   height: 90px;
@@ -43,5 +48,10 @@
   margin: 15px;
   background-color: #6063dc;
   color: white;
+  font-family: "neodgm", sans-serif;
+}
+
+#btn-back {
+  font-size: 30px;
   font-family: "neodgm", sans-serif;
 }
